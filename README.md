@@ -33,6 +33,14 @@ sc202220u1e2-los-chimuelos created by GitHub Classroom
             MEMORY[17]=16384; 
             
             // LOOP
+            
+            while(MEMORY[17]<24576)
+            {
+              MEMORY[MEMORY[17]]=MEMORY[16]
+            
+              MEMORY[17]=MEMORY[17]+1;
+            
+            }
 
         
 
