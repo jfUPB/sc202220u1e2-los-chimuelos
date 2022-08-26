@@ -8,7 +8,6 @@ sc202220u1e2-los-chimuelos created by GitHub Classroom
 ## Sara Londoño Orrego 437687
 
 
-void updateKeyboard()
 
 void hackProgram()
 
