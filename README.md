@@ -14,26 +14,28 @@ sc202220u1e2-los-chimuelos created by GitHub Classroom
     {
         if (MEMORY[KEYBOARD] !=0)
         {
-            MEMORY[0]=0x65
-            MEMORY[1]=0x66
-            if ((MEMORY[0]-MEMORY[KEYBOARD] == 0)) //FILL
+            if ( MEMORY[0] == MEMORY[KEYBOARD]) //FILL
             {
-                MEMORY[MEMORY[16384]] = 0x0000; 
-                MEMORY[16384] = MEMORY[16384] + 1;
+                ??MEMORY[MEMORY[16384]] = 0x0000; 
+                ??MEMORY[16384] = MEMORY[16384] + 1;
             }
-            else if ((MEMORY[1]-MEMORY[KEYBOARD]==0)) //CLEAR
+            else if (  (MEMORY[1]-MEMORY[KEYBOARD]) == 0 ) //CLEAR
             {
-              if ((MEMORY[16384] - 24576) < 0)
+              
+              ???if ((MEMORY[16384] - 24576) < 0)
                {
-                MEMORY[24576] = MEMORY[24576] - 1;
-                MEMORY[MEMORY[24576]] = 0xFFFF;
+                ??MEMORY[24576] = MEMORY[24576] - 1;
+                ??MEMORY[MEMORY[24576]] = 0xFFFF;
                
                }
             }
-           
-            else if
+            else
             {
-                continue
+                continue;
             }
-        
+
+            ?? DRAW LOOP
+
+
         }
+    }
