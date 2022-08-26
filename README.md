@@ -10,6 +10,7 @@ sc202220u1e2-los-chimuelos created by GitHub Classroom
 
 
  while (true) 
+ 
     {
         if (MEMORY[KEYBOARD] !=0)
         {
