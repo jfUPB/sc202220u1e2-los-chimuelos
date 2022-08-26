@@ -15,7 +15,6 @@ constexpr uint16_t KEYBOARD = 24576
 
 constexpr uint16_t SCREEN = 16384
 
-int16_t MEMORY[KEYBOARD + 1]
 
 
     
