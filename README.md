@@ -8,33 +8,31 @@ sc202220u1e2-los-chimuelos created by GitHub Classroom
 ## Sara Londoño Orrego 437687
 
 
-
+```cpp
 
     while (true) 
     
     {
         if (MEMORY[KEYBOARD] !=0)
         {
-            MEMORY[0]=0x65
-            MEMORY[1]=0x66
             if ((MEMORY[0]-MEMORY[KEYBOARD] == 0)) //FILL
             {
-                MEMORY[16]=-1
-                
-
+                MEMORY[16]=-1;
             }
             else if ((MEMORY[1]-MEMORY[KEYBOARD]==0)) //CLEAR
             {
-             MEMORY[16]=0
+             MEMORY[16]=0;
 
             }
-           
             else
             {
-                continue
+                continue;
             }
 
-            MEMORY[17]=16384;
+            // DRAW  ustedes dicen que i está en la dirección 17
+            MEMORY[17]=16384; 
+            
+            // LOOP
 
         
 
