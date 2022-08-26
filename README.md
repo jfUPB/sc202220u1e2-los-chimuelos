@@ -24,6 +24,9 @@ MEMORY[0] = 0x65;
 
     
 MEMORY[1] = 0x66;
+
+
+MEMORY[KEYBOARD]=0
         
    
 
