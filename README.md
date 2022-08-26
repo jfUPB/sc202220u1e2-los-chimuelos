@@ -19,36 +19,15 @@ constexpr uint16_t SCREEN = 16384
 int16_t MEMORY[KEYBOARD + 1]
 
 
-void updateKeyboard()
+    
+MEMORY[0] = 0x65;
+        
+    
 
-{
-
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
     
-    {
-    
-        MEMORY[0] = 0x65;
+MEMORY[1] = 0x66;
         
-    }
-    
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::B))
-    
-    {
-    
-        MEMORY[1] = 0x66;
-        
-    }
-    
-    
-    else
-    
-    {
-    
-        MEMORY[KEYBOARD] = 0;
-        
-    }
-    
-}
+   
 
 
 void hackProgram()
