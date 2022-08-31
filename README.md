@@ -40,7 +40,7 @@ sc202220u1e2-los-chimuelos created by GitHub Classroom
             
               // Hay que arreglar porque siempre están escriendo la misma posición de la pantalla.
               
-              MEMORY[16384]=MEMORY[16] //MEMORY[MEMORY[17]] es lo mismo q' MEMORY[16384] ya que MEMORY[17] almacena el valor de 16384
+              MEMORY[MEMORY[17]]=MEMORY[16] //MEMORY[MEMORY[17]] es lo mismo q' MEMORY[16384] ya que MEMORY[17] almacena el valor de 16384
             
               // Esto está bien
               MEMORY[17]=MEMORY[17]+1;
