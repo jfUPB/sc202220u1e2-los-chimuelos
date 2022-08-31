@@ -15,11 +15,11 @@ sc202220u1e2-los-chimuelos created by GitHub Classroom
     {
         if (MEMORY[KEYBOARD] !=0)
         {
-            if ((MEMORY[0]-MEMORY[KEYBOARD] == 0)) //FILL
+            if ( (MEMORY[0]-MEMORY[KEYBOARD]) == 0 ) //FILL
             {
                 MEMORY[16]=-1;
             }
-            else if ((MEMORY[1]-MEMORY[KEYBOARD]==0)) //CLEAR
+            else if ( (MEMORY[1]-MEMORY[KEYBOARD]) ==0 ) //CLEAR
             {
              MEMORY[16]=0;
 
@@ -34,10 +34,15 @@ sc202220u1e2-los-chimuelos created by GitHub Classroom
             
             // LOOP
             
-            while(MEMORY[17]-24576<0)
+            while( MEMORY[17] < 24576 )
             {
-              MEMORY[16384]=MEMORY[16] //MEMORY[MEMORY[17]] es lo mismo que MEMORY[16384] ya que MEMORY[17] almacena el valor de 16384
             
+            
+              // Hay que arreglar porque siempre están escriendo la misma posición de la pantalla.
+              
+              MEMORY[16384]=MEMORY[16] //MEMORY[MEMORY[17]] es lo mismo q' MEMORY[16384] ya que MEMORY[17] almacena el valor de 16384
+            
+              // Esto está bien
               MEMORY[17]=MEMORY[17]+1;
             
             }
