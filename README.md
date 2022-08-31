@@ -34,7 +34,7 @@ sc202220u1e2-los-chimuelos created by GitHub Classroom
             
             // LOOP
             
-            while(MEMORY[17]<-24576<0)
+            while(MEMORY[17]-24576<0)
             {
               MEMORY[16384]=MEMORY[16] //MEMORY[MEMORY[17]] es lo mismo que MEMORY[16384] ya que MEMORY[17] almacena el valor de 16384
             
